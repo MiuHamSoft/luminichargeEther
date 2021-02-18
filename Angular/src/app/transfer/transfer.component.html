@@ -1,0 +1,73 @@
+<mat-toolbar color="primary">
+    <span>LuminiCharge</span>
+    <span class="flexExpand"></span>
+    <span>Precio Ether</span>
+    <span class="toolbar-item">{{etherCostInMXN | currency:'MXN':'MXN $':'1.2-2'}}</span>
+    <span class="toolbar-item">{{etherCostInUSD | currency:'USD':'USD $':'1.2-2'}}</span>
+</mat-toolbar>
+<section class="container-fluid" id="fuel-form">
+    <!-- <div class="row">
+        <div class="col-2 vertical-align">
+            <h1 class="no-margin"></h1>
+        </div>
+        <div class="col-2 vertical-align">
+            <h2 class="no-margin"></h2>
+        </div>
+        <div class="col-2 vertical-align">
+            <h2 class="no-margin"></h2>
+        </div>
+        <div class="col-6 vertical-align"></div>
+    </div> -->
+    <div class="row form-wrapper">
+        <div class="col-12 form-item text-center">
+            <div class="item">
+                <button mat-stroked-button color="primary" (click)="loadWeb3()">Conectar cuenta</button>
+            </div>
+            <ng-container *ngIf="isAccountConnected">
+                <div class="item">
+                    <mat-form-field class="full-width">
+                        <mat-label>Costo de Combustible</mat-label>
+                        <input matInput [formControl]="amountInput" type="text">
+                        <span matSuffix>gwei</span>
+                    </mat-form-field>
+                </div>
+                <div class="item">
+                    <div class="container-row">
+                        <div class="item">
+                            <span>Cantidad en pesos: {{currentMXNValue | currency:'MXN':'MXN $':'1.2-2'}}</span>
+                        </div>
+                        <div class="item">
+                            <span>Cantidad en dolares: {{currentUSDValue | currency:'USD':'USD $':'1.2-2'}}</span>
+                        </div>
+                        <div class="item">
+                            <span>Tiempo de transaccion: {{transactionTime/1000}} segundos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <button mat-stroked-button color="primary" (click)="timeListener()">Cargar Combustible</button>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>
+
+<section class="row">
+    <div class="col-12 text-center">
+        <h2>Transacciones realizadas</h2>
+    </div>
+    <ng-container *ngFor="let transaction of transactionsList">
+        <div class="col-12 text-center">
+            <p>ID: {{transaction.id}} Combustible: {{transaction.data}} kW</p>
+        </div>
+    </ng-container>
+</section>
+
+<div class="spinner-wrapper" *ngIf="loading">
+    <mat-progress-spinner class="spinner" color="accent" mode="indeterminate">
+    </mat-progress-spinner>
+</div>
+
+<!-- <button (click)="getPayment()">Obtener pago</button>
+<button (click)="confirm()">Confirmar transaccion</button>
+<button (click)="createTask()">Tarea</button> -->

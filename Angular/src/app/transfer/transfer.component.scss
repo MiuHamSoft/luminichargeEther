@@ -1,0 +1,65 @@
+.container-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+}
+
+#fuel-form {
+    height: auto;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-around;
+}
+
+.item {
+    padding: 1rem;
+
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.spinner {
+    margin: auto;
+}
+
+.form-item {
+    border-radius: 15px;
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.form-wrapper {
+    width: 40vw;
+    margin: auto;
+}
+
+.toolbar-item {
+    font-size: 1.3vw;
+    margin: 1rem;
+}
+
+.flexExpand {
+    flex: 1 1 auto;
+}

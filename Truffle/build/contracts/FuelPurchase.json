@@ -1,0 +1,1724 @@
+{
+  "contractName": "FuelPurchase",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "transactions",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x18015191"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "tasks",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "fuel",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8d977672"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "payments",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xe2982c21"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor",
+      "signature": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "fuel",
+          "type": "string"
+        }
+      ],
+      "name": "chargeFuelNow",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function",
+      "signature": "0xc80ea100"
+    }
+  ],
+  "bytecode": "0x60806040526000805534801561001457600080fd5b5061043e806100246000396000f3fe6080604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631801519181146100665780638d9776721461008d578063c80ea10014610136578063e2982c21146101de575b600080fd5b34801561007257600080fd5b5061007b61021e565b60408051918252519081900360200190f35b34801561009957600080fd5b506100b7600480360360208110156100b057600080fd5b5035610224565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156100fa5781810151838201526020016100e2565b50505050905090810190601f1680156101275780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b6101dc6004803603602081101561014c57600080fd5b81019060208101813564010000000081111561016757600080fd5b82018360208201111561017957600080fd5b8035906020019184600183028401116401000000008311171561019b57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102c9945050505050565b005b3480156101ea57600080fd5b5061007b6004803603602081101561020157600080fd5b503573ffffffffffffffffffffffffffffffffffffffff16610365565b60005481565b60026020818152600092835260409283902080546001808301805487519281161561010002600019011695909504601f81018590048502820185019096528581529094919390929091908301828280156102bf5780601f10610294576101008083540402835291602001916102bf565b820191906000526020600020905b8154815290600101906020018083116102a257829003601f168201915b5050505050905082565b34333110156102d757600080fd5b600080546001908101808355604080518082018252828152602080820187815293865260028152919094208451815591518051929361031e93908501929190910190610377565b5050604051738efe98513b3253cefbd490d5685e45289dc11fd091503480156108fc02916000818181858888f19350505050158015610361573d6000803e3d6000fd5b5050565b60016020526000908152604090205481565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103b857805160ff19168380011785556103e5565b828001600101855582156103e5579182015b828111156103e55782518255916020019190600101906103ca565b506103f19291506103f5565b5090565b61040f91905b808211156103f157600081556001016103fb565b9056fea165627a7a723058207c7cb5d80701e192c94aa897e4245173f11a455a9a379f48fd3ec5c16b2782e00029",
+  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631801519181146100665780638d9776721461008d578063c80ea10014610136578063e2982c21146101de575b600080fd5b34801561007257600080fd5b5061007b61021e565b60408051918252519081900360200190f35b34801561009957600080fd5b506100b7600480360360208110156100b057600080fd5b5035610224565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156100fa5781810151838201526020016100e2565b50505050905090810190601f1680156101275780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b6101dc6004803603602081101561014c57600080fd5b81019060208101813564010000000081111561016757600080fd5b82018360208201111561017957600080fd5b8035906020019184600183028401116401000000008311171561019b57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102c9945050505050565b005b3480156101ea57600080fd5b5061007b6004803603602081101561020157600080fd5b503573ffffffffffffffffffffffffffffffffffffffff16610365565b60005481565b60026020818152600092835260409283902080546001808301805487519281161561010002600019011695909504601f81018590048502820185019096528581529094919390929091908301828280156102bf5780601f10610294576101008083540402835291602001916102bf565b820191906000526020600020905b8154815290600101906020018083116102a257829003601f168201915b5050505050905082565b34333110156102d757600080fd5b600080546001908101808355604080518082018252828152602080820187815293865260028152919094208451815591518051929361031e93908501929190910190610377565b5050604051738efe98513b3253cefbd490d5685e45289dc11fd091503480156108fc02916000818181858888f19350505050158015610361573d6000803e3d6000fd5b5050565b60016020526000908152604090205481565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103b857805160ff19168380011785556103e5565b828001600101855582156103e5579182015b828111156103e55782518255916020019190600101906103ca565b506103f19291506103f5565b5090565b61040f91905b808211156103f157600081556001016103fb565b9056fea165627a7a723058207c7cb5d80701e192c94aa897e4245173f11a455a9a379f48fd3ec5c16b2782e00029",
+  "sourceMap": "57:727:0:-;;;115:1;85:31;;375:23;8:9:-1;5:2;;;30:1;27;20:12;5:2;375:23:0;57:727;;;;;;",
+  "deployedSourceMap": "57:727:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;85:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;85:31:0;;;;;;;;;;;;;;;;;;;;331:37;;8:9:-1;5:2;;;30:1;27;20:12;5:2;331:37:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;331:37:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;331:37:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;404:378;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;404:378:0;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;404:378:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;404:378:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;404:378:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;404:378:0;;-1:-1:-1;404:378:0;;-1:-1:-1;;;;;404:378:0;;;123:43;;8:9:-1;5:2;;;30:1;27;20:12;5:2;123:43:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;123:43:0;;;;;85:31;;;;:::o;331:37::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;331:37:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;404:378::-;522:9;500:10;:18;:31;;492:40;;;;;;542:12;:14;;;;;;;;;588:24;;;;;;;;;;;;;;;;;;566:19;;;:5;:19;;;;;;:46;;;;;;;;:19;;:46;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;622:27:0;;216:42;;-1:-1:-1;639:9:0;622:27;;;;;;;;;639:9;216:42;622:27;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;622:27:0;404:378;:::o;123:43::-;;;;;;;;;;;;;:::o;57:727::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;57:727:0;;;-1:-1:-1;57:727:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.5.0;\n\ncontract FuelPurchase {\n    uint256 public transactions = 0;\n\n    mapping(address => uint256) public payments;\n\n    address payable constant station =\n        0x8Efe98513B3253ceFbd490D5685E45289dc11FD0;\n\n    struct Fuel {\n        uint256 id;\n        string fuel;\n    }\n\n    mapping(uint256 => Fuel) public tasks;\n\n    constructor() public {}\n\n    function chargeFuelNow(string memory fuel)\n        public\n        payable\n    {\n        require(msg.sender.balance >= msg.value);\n        transactions++;\n        tasks[transactions] = Fuel(transactions, fuel);\n        station.transfer(msg.value);\n        // (bool sent, bytes memory data) = _to.call{value: msg.value}(\"\");\n        // require(sent, \"Failed to send Ether\");\n    }\n}\n",
+  "sourcePath": "/home/angel/Learning/Ethereum/Projects/car-fuel/Truffle/contracts/FuelPurchase.sol",
+  "ast": {
+    "absolutePath": "/home/angel/Learning/Ethereum/Projects/car-fuel/Truffle/contracts/FuelPurchase.sol",
+    "exportedSymbols": {
+      "FuelPurchase": [
+        59
+      ]
+    },
+    "id": 60,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 59,
+        "linearizedBaseContracts": [
+          59
+        ],
+        "name": "FuelPurchase",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "transactions",
+            "nodeType": "VariableDeclaration",
+            "scope": 59,
+            "src": "85:31:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "85:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "115:1:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 8,
+            "name": "payments",
+            "nodeType": "VariableDeclaration",
+            "scope": 59,
+            "src": "123:43:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 7,
+              "keyType": {
+                "id": 5,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "131:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "123:27:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 6,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "142:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "id": 11,
+            "name": "station",
+            "nodeType": "VariableDeclaration",
+            "scope": 59,
+            "src": "173:85:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 9,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "173:15:0",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "307838456665393835313342333235336365466264343930443536383545343532383964633131464430",
+              "id": 10,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "216:42:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              },
+              "value": "0x8Efe98513B3253ceFbd490D5685E45289dc11FD0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "canonicalName": "FuelPurchase.Fuel",
+            "id": 16,
+            "members": [
+              {
+                "constant": false,
+                "id": 13,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 16,
+                "src": "287:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 12,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "287:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 15,
+                "name": "fuel",
+                "nodeType": "VariableDeclaration",
+                "scope": 16,
+                "src": "307:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 14,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "307:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Fuel",
+            "nodeType": "StructDefinition",
+            "scope": 59,
+            "src": "265:60:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 20,
+            "name": "tasks",
+            "nodeType": "VariableDeclaration",
+            "scope": 59,
+            "src": "331:37:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Fuel_$16_storage_$",
+              "typeString": "mapping(uint256 => struct FuelPurchase.Fuel)"
+            },
+            "typeName": {
+              "id": 19,
+              "keyType": {
+                "id": 17,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "339:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "331:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Fuel_$16_storage_$",
+                "typeString": "mapping(uint256 => struct FuelPurchase.Fuel)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 18,
+                "name": "Fuel",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 16,
+                "src": "350:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Fuel_$16_storage_ptr",
+                  "typeString": "struct FuelPurchase.Fuel"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 23,
+              "nodeType": "Block",
+              "src": "396:2:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 24,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "386:2:0"
+            },
+            "returnParameters": {
+              "id": 22,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "396:0:0"
+            },
+            "scope": 59,
+            "src": "375:23:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 57,
+              "nodeType": "Block",
+              "src": "482:300:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 35,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 30,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 107,
+                              "src": "500:3:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 31,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "500:10:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address_payable",
+                              "typeString": "address payable"
+                            }
+                          },
+                          "id": 32,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "balance",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "500:18:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 33,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 107,
+                            "src": "522:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 34,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "522:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "500:31:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 29,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        110,
+                        111
+                      ],
+                      "referencedDeclaration": 110,
+                      "src": "492:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 36,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "492:40:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37,
+                  "nodeType": "ExpressionStatement",
+                  "src": "492:40:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 39,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "542:14:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 38,
+                      "name": "transactions",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "542:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 40,
+                  "nodeType": "ExpressionStatement",
+                  "src": "542:14:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 48,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 41,
+                        "name": "tasks",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20,
+                        "src": "566:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Fuel_$16_storage_$",
+                          "typeString": "mapping(uint256 => struct FuelPurchase.Fuel storage ref)"
+                        }
+                      },
+                      "id": 43,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 42,
+                        "name": "transactions",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "572:12:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "566:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Fuel_$16_storage",
+                        "typeString": "struct FuelPurchase.Fuel storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 45,
+                          "name": "transactions",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4,
+                          "src": "593:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 46,
+                          "name": "fuel",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 26,
+                          "src": "607:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 44,
+                        "name": "Fuel",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 16,
+                        "src": "588:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Fuel_$16_storage_ptr_$",
+                          "typeString": "type(struct FuelPurchase.Fuel storage pointer)"
+                        }
+                      },
+                      "id": 47,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "588:24:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Fuel_$16_memory",
+                        "typeString": "struct FuelPurchase.Fuel memory"
+                      }
+                    },
+                    "src": "566:46:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Fuel_$16_storage",
+                      "typeString": "struct FuelPurchase.Fuel storage ref"
+                    }
+                  },
+                  "id": 49,
+                  "nodeType": "ExpressionStatement",
+                  "src": "566:46:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 53,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 107,
+                          "src": "639:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 54,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "639:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 50,
+                        "name": "station",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "622:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 52,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "622:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "622:27:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "ExpressionStatement",
+                  "src": "622:27:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 58,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "chargeFuelNow",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 27,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26,
+                  "name": "fuel",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "427:18:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 25,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "427:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "426:20:0"
+            },
+            "returnParameters": {
+              "id": 28,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "482:0:0"
+            },
+            "scope": 59,
+            "src": "404:378:0",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 60,
+        "src": "57:727:0"
+      }
+    ],
+    "src": "32:753:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/angel/Learning/Ethereum/Projects/car-fuel/Truffle/contracts/FuelPurchase.sol",
+    "exportedSymbols": {
+      "FuelPurchase": [
+        59
+      ]
+    },
+    "id": 60,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 59,
+        "linearizedBaseContracts": [
+          59
+        ],
+        "name": "FuelPurchase",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "transactions",
+            "nodeType": "VariableDeclaration",
+            "scope": 59,
+            "src": "85:31:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "85:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "115:1:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 8,
+            "name": "payments",
+            "nodeType": "VariableDeclaration",
+            "scope": 59,
+            "src": "123:43:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 7,
+              "keyType": {
+                "id": 5,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "131:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "123:27:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 6,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "142:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": true,
+            "id": 11,
+            "name": "station",
+            "nodeType": "VariableDeclaration",
+            "scope": 59,
+            "src": "173:85:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 9,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "173:15:0",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "307838456665393835313342333235336365466264343930443536383545343532383964633131464430",
+              "id": 10,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "216:42:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              },
+              "value": "0x8Efe98513B3253ceFbd490D5685E45289dc11FD0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "canonicalName": "FuelPurchase.Fuel",
+            "id": 16,
+            "members": [
+              {
+                "constant": false,
+                "id": 13,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 16,
+                "src": "287:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 12,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "287:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 15,
+                "name": "fuel",
+                "nodeType": "VariableDeclaration",
+                "scope": 16,
+                "src": "307:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 14,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "307:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Fuel",
+            "nodeType": "StructDefinition",
+            "scope": 59,
+            "src": "265:60:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 20,
+            "name": "tasks",
+            "nodeType": "VariableDeclaration",
+            "scope": 59,
+            "src": "331:37:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Fuel_$16_storage_$",
+              "typeString": "mapping(uint256 => struct FuelPurchase.Fuel)"
+            },
+            "typeName": {
+              "id": 19,
+              "keyType": {
+                "id": 17,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "339:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "331:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Fuel_$16_storage_$",
+                "typeString": "mapping(uint256 => struct FuelPurchase.Fuel)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 18,
+                "name": "Fuel",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 16,
+                "src": "350:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Fuel_$16_storage_ptr",
+                  "typeString": "struct FuelPurchase.Fuel"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 23,
+              "nodeType": "Block",
+              "src": "396:2:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 24,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "386:2:0"
+            },
+            "returnParameters": {
+              "id": 22,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "396:0:0"
+            },
+            "scope": 59,
+            "src": "375:23:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 57,
+              "nodeType": "Block",
+              "src": "482:300:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 35,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 30,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 107,
+                              "src": "500:3:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 31,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "500:10:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address_payable",
+                              "typeString": "address payable"
+                            }
+                          },
+                          "id": 32,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "balance",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "500:18:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 33,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 107,
+                            "src": "522:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 34,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "522:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "500:31:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 29,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        110,
+                        111
+                      ],
+                      "referencedDeclaration": 110,
+                      "src": "492:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 36,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "492:40:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37,
+                  "nodeType": "ExpressionStatement",
+                  "src": "492:40:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 39,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "542:14:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 38,
+                      "name": "transactions",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "542:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 40,
+                  "nodeType": "ExpressionStatement",
+                  "src": "542:14:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 48,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 41,
+                        "name": "tasks",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20,
+                        "src": "566:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Fuel_$16_storage_$",
+                          "typeString": "mapping(uint256 => struct FuelPurchase.Fuel storage ref)"
+                        }
+                      },
+                      "id": 43,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 42,
+                        "name": "transactions",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "572:12:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "566:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Fuel_$16_storage",
+                        "typeString": "struct FuelPurchase.Fuel storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 45,
+                          "name": "transactions",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4,
+                          "src": "593:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 46,
+                          "name": "fuel",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 26,
+                          "src": "607:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 44,
+                        "name": "Fuel",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 16,
+                        "src": "588:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Fuel_$16_storage_ptr_$",
+                          "typeString": "type(struct FuelPurchase.Fuel storage pointer)"
+                        }
+                      },
+                      "id": 47,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "588:24:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Fuel_$16_memory",
+                        "typeString": "struct FuelPurchase.Fuel memory"
+                      }
+                    },
+                    "src": "566:46:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Fuel_$16_storage",
+                      "typeString": "struct FuelPurchase.Fuel storage ref"
+                    }
+                  },
+                  "id": 49,
+                  "nodeType": "ExpressionStatement",
+                  "src": "566:46:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 53,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 107,
+                          "src": "639:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 54,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "639:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 50,
+                        "name": "station",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "622:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 52,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "622:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "622:27:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "ExpressionStatement",
+                  "src": "622:27:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 58,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "chargeFuelNow",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 27,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26,
+                  "name": "fuel",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "427:18:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 25,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "427:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "426:20:0"
+            },
+            "returnParameters": {
+              "id": 28,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "482:0:0"
+            },
+            "scope": 59,
+            "src": "404:378:0",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 60,
+        "src": "57:727:0"
+      }
+    ],
+    "src": "32:753:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "1611852860855": {
+      "events": {},
+      "links": {},
+      "address": "0x3Df133a1c20F83e4b20BCE24fC88859D84e2A8F0",
+      "transactionHash": "0x8f0796af34fe90f99437df479a87fc5fdb4abc04b5bab237236360b303736c68"
+    },
+    "1611895089826": {
+      "events": {},
+      "links": {},
+      "address": "0x869B3686cBF4c6fd111F392b372f1CC3537E1202",
+      "transactionHash": "0x83ac23a5e60253a4ba6837355a7b7bca791534d7ea5a172c4400b35e4d22ea1b"
+    },
+    "1611938382575": {
+      "events": {},
+      "links": {},
+      "address": "0x26A7FDc506a572358e1437AFa249e9897c06F82D",
+      "transactionHash": "0x26c8b94af80807ef96b9cc6712699008dc66cfdbd97ea06cc1104f244a6a6ea5"
+    },
+    "1611979670205": {
+      "events": {},
+      "links": {},
+      "address": "0x136c982009DcdB3386238BecC5E6e5add9187505",
+      "transactionHash": "0x6f8df3e730d2187b462dc6cae30746c12741f0f59d37503fdfe5ab563020f187"
+    },
+    "1612190995193": {
+      "events": {},
+      "links": {},
+      "address": "0x6BaB3e0078Ec6D1403196bE946439CeDbA3A3d08",
+      "transactionHash": "0xa5d34a2dcd01afb63095b21144ccf71a336a9eac35eaf93047e50dfe065f5ff6"
+    },
+    "1612373620898": {
+      "events": {},
+      "links": {},
+      "address": "0x53456Cc54DA9Db158e47bEff7431701eCBd4928A",
+      "transactionHash": "0x1b4b4d388fbccbb9483f6394f51f23a054d41b32b9d4c430f7039b9c87ce9712"
+    },
+    "1612376672239": {
+      "events": {},
+      "links": {},
+      "address": "0xE7f16beD5Cdd742AFcEAb287DC64ad5f1340A3a3",
+      "transactionHash": "0xeca83cb9e6bb8d1484ca2630cbf3c43860387113d01d6b4817fad9c26afe02f7"
+    },
+    "1612456367451": {
+      "events": {},
+      "links": {},
+      "address": "0x1b346bda85dC93EeC779f0aAAF356bC32306047c",
+      "transactionHash": "0x100ad0c9e1cbf802c687c5dafe63a351720a8397b31db7daef9bd98850ad00b5"
+    },
+    "1612459538459": {
+      "events": {},
+      "links": {},
+      "address": "0xb744bDfcB001486A4Eb7A9a9eC587F2d27D787a4",
+      "transactionHash": "0x32ea7b7e838cbdffaf0f1e5ac865ae4cfbac3b8c3cc4a8c667f107dc6e685ce9"
+    },
+    "1612460046520": {
+      "events": {},
+      "links": {},
+      "address": "0x4f8f694FC2c47e71C53b7301f300c1ce040d89D9",
+      "transactionHash": "0x660a3ef4053944b2a4632bffa2b09210b15122af1f7957f189abc54074d0e7a3"
+    },
+    "1613147882510": {
+      "events": {},
+      "links": {},
+      "address": "0x082DC9d1F452DDCE08e780A5A321d06BD1A4b3D0",
+      "transactionHash": "0x11fe758e5e920dbce8496e23bcf9dd613461e0b9c032139faf5a61b9f98ca623"
+    },
+    "1613444385821": {
+      "events": {},
+      "links": {},
+      "address": "0x9B4528E2dC9889B81F8C7930dd20b201B180b574",
+      "transactionHash": "0xd30d81791d1f3cfc51306f5f296aca082f1fcfec17d003d1678a7e4a5f498327"
+    },
+    "1613445210100": {
+      "events": {},
+      "links": {},
+      "address": "0x09AF149dC2D3D3ed5f2B29D0f3ef6d51ef9547Bf",
+      "transactionHash": "0x441465974a82170ec8151b6d17d46af841d58536e20cd532bd669b6c9adcae8d"
+    },
+    "1613445257794": {
+      "events": {},
+      "links": {},
+      "address": "0x81E98b4A3B148A5057D89d50FB37300046FC28CD",
+      "transactionHash": "0x6def4f83e664a7388cc5640fd0ed3eda72da4702143e16bebb079a3fc0418565"
+    },
+    "1613537009790": {
+      "events": {},
+      "links": {},
+      "address": "0x0f585793a407497981718c59086C3B6004eb3445",
+      "transactionHash": "0xa2b67b1ae767c7051596aca03dac3621cf845e4ecaf3a822e617dd58715a446d"
+    },
+    "1613618773377": {
+      "events": {},
+      "links": {},
+      "address": "0x29BCFebdb316679F34Ec72A24240b79DD92A758c",
+      "transactionHash": "0xb7cf72218c3e7bb1ec88c06f5212fa39ac8eac2603554de98592727c87892a65"
+    },
+    "1613620465815": {
+      "events": {},
+      "links": {},
+      "address": "0xE54a1565e69e4bB61A71a06aBf852Be4398716E0",
+      "transactionHash": "0x629607d580a2a10aa3b4a4f1ccc71dd85c50ff284bd6ba1d64f2a9fc56ea1c04"
+    }
+  },
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2021-02-18T04:39:13.958Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
